@@ -1,0 +1,168 @@
+package New_Mini_Projects;
+
+import java.util.Scanner;
+
+public class mcq_system 
+{
+
+	public static void main(String[] args) 
+	{
+		char ans1 = 'A';
+		char ans2 = 'C';
+		char ans3 = 'A';
+		char ans4 = 'D';
+		char ans5 = 'B';
+		
+		int i1 = 0;
+		int i2 = 0;
+		int i3 = 0;
+		int i4 = 0;
+		int i5 = 0;
+				
+		//==================================Question 1==============================================//	
+		System.out.println("1) Which of the following qption leads to the portability and security of java?");
+		System.out.println("A.Bytecode is executed by JVM");
+		System.out.println("B.The applet makes the java code secure and portable");
+		System.out.println("C.Use of exception handling");
+		System.out.println("D.Dynamic binding between objects");
+		
+		
+		Scanner sc1 = new Scanner(System.in);
+		
+		System.out.println("Enter your option");
+		char a1 = sc1.next().charAt(0);
+		
+		if(ans1 == a1)
+		{
+			switch(ans1)
+			{
+				case 'A': System.out.println("Right");
+				i1 = i1+4;
+				break;
+			
+				default : System.out.println("Invalid option");
+			}
+		}
+		else
+		{
+			i1 = i1-1;
+			System.out.println("Wrong");
+		}
+		
+		//==================================Question 2==============================================//
+		System.out.println("2) Which of the following is not a Java features?");			
+		System.out.println("A.Dynamic");
+		System.out.println("B.Architecture Neutral");
+		System.out.println("C.Use of pointers");
+		System.out.println("D.Object-oriented");
+		
+		
+		System.out.println("Enter your option");
+		char a2 = sc1.next().charAt(0);
+		
+		if(ans2 == a2)
+		{
+			switch(ans2)
+			{
+				case 'C': System.out.println("Right");
+				i2 = i2+4;
+				break;
+			
+				default : System.out.println("Invalid option");
+			}
+		}
+		else
+		{
+			i2 = i2-1;
+			System.out.println("Wrong");
+		}
+		
+		//==================================Question 3==============================================//
+		System.out.println("3) The \\u0021 article referred to as a");
+		System.out.println("A.Unicode escape sequence");
+		System.out.println("B.Octal escape");
+		System.out.println("C.Hexadecimal");
+		System.out.println("D.Line feed");
+		
+		
+		System.out.println("Enter your option");
+		char a3 = sc1.next().charAt(0);
+		
+		if(ans3 == a3)
+		{
+			switch(ans3)
+			{
+				case 'A': System.out.println("Right");
+				i3 = i3+4;
+				break;
+			
+				default : System.out.println("Invalid option");
+			}
+		}
+		else
+		{
+			i3 = i3-1;
+			System.out.println("Wrong");
+		}
+		
+		
+		//==================================Question 4==============================================//
+		System.out.println("4) _____ is used to find and fix bugs in the Java programs.");
+		System.out.println("A.JVM");
+		System.out.println("B.JRE");
+		System.out.println("C.JDK");
+		System.out.println("D.JDB");
+		
+		
+		System.out.println("Enter your option");
+		char a4 = sc1.next().charAt(0);
+		
+		if(ans4 == a4)
+		{
+			switch(ans4)
+			{
+				case 'D': System.out.println("Right");
+				i4 = i4+4;
+				break;
+			
+				default : System.out.println("Invalid option");
+			}
+		}
+		else
+		{
+			i4 = i4-1;
+			System.out.println("Wrong");
+		}
+		
+		//==================================Question 5==============================================//
+		System.out.println("5) What is the return type of the hashCode() method in the Object class?");
+		System.out.println("A.Object");
+		System.out.println("B.int");
+		System.out.println("C.long");
+		System.out.println("D.void");
+		
+		System.out.println("Enter your option");
+		char a5 = sc1.next().charAt(0);
+		
+		if(ans5 == a5)
+		{
+			switch(ans5)
+			{
+				case 'B': System.out.println("Right");
+				i5 = i5+4;
+				break;
+			
+				default : System.out.println("Invalid option");
+			}
+		}
+		else
+		{
+			i5 = i5-1;
+			System.out.println("Wrong");
+		}
+		
+		System.out.println("Your total score is:"+(i1+i2+i3+i4+i5));
+
+	}
+
+}
