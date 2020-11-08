@@ -174,5 +174,6 @@ public class mcq_system
 		System.out.println("Your total score is:"+(i));
 		
 		System.out.println("==================================================================");
+		sc1.close();
 	}
 }
