@@ -2,7 +2,7 @@ package New_Mini_Projects;
 
 import java.util.Scanner;
 
-public class mcq_demo 
+public class mcq_system
 {
 	public static void main(String[] args) 
 	{
