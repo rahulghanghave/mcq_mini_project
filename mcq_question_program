@@ -2,9 +2,8 @@ package New_Mini_Projects;
 
 import java.util.Scanner;
 
-public class mcq_system 
+public class mcq_demo 
 {
-
 	public static void main(String[] args) 
 	{
 		char ans1 = 'A';
@@ -13,21 +12,30 @@ public class mcq_system
 		char ans4 = 'D';
 		char ans5 = 'B';
 		
-		int i1 = 0;
-		int i2 = 0;
-		int i3 = 0;
-		int i4 = 0;
-		int i5 = 0;
-				
+		int i = 0;		
+		
+		Scanner sc1 = new Scanner(System.in);
+		//==================================Candidate details========================================//
+		System.out.println("Enter your fullname:");
+		String Name = sc1.nextLine();
+		System.out.println("Enter your address:-");
+		String Address = sc1.nextLine();
+		System.out.println("Enter your contact number:");
+		long Contact = sc1.nextLong();
+		//==========================================================================================//
+		System.out.println("=============================Candidate details========================");
+		System.out.println("Fullname:"+Name);
+		System.out.println("Contact:"+Contact);
+		System.out.println("Address:"+Address);
+		System.out.println("========================================================================");
+		System.out.println("=======================Start your exam==================================");
+		
 		//==================================Question 1==============================================//	
 		System.out.println("1) Which of the following qption leads to the portability and security of java?");
 		System.out.println("A.Bytecode is executed by JVM");
 		System.out.println("B.The applet makes the java code secure and portable");
 		System.out.println("C.Use of exception handling");
 		System.out.println("D.Dynamic binding between objects");
-		
-		
-		Scanner sc1 = new Scanner(System.in);
 		
 		System.out.println("Enter your option");
 		char a1 = sc1.next().charAt(0);
@@ -37,7 +45,7 @@ public class mcq_system
 			switch(ans1)
 			{
 				case 'A': System.out.println("Right");
-				i1 = i1+4;
+				i = i+4;
 				break;
 			
 				default : System.out.println("Invalid option");
@@ -45,7 +53,7 @@ public class mcq_system
 		}
 		else
 		{
-			i1 = i1-1;
+			i = i-1;
 			System.out.println("Wrong");
 		}
 		
@@ -65,7 +73,7 @@ public class mcq_system
 			switch(ans2)
 			{
 				case 'C': System.out.println("Right");
-				i2 = i2+4;
+				i = i+4;
 				break;
 			
 				default : System.out.println("Invalid option");
@@ -73,7 +81,7 @@ public class mcq_system
 		}
 		else
 		{
-			i2 = i2-1;
+			i = i-1;
 			System.out.println("Wrong");
 		}
 		
@@ -93,7 +101,7 @@ public class mcq_system
 			switch(ans3)
 			{
 				case 'A': System.out.println("Right");
-				i3 = i3+4;
+				i = i+4;
 				break;
 			
 				default : System.out.println("Invalid option");
@@ -101,7 +109,7 @@ public class mcq_system
 		}
 		else
 		{
-			i3 = i3-1;
+			i = i-1;
 			System.out.println("Wrong");
 		}
 		
@@ -122,7 +130,7 @@ public class mcq_system
 			switch(ans4)
 			{
 				case 'D': System.out.println("Right");
-				i4 = i4+4;
+				i = i+4;
 				break;
 			
 				default : System.out.println("Invalid option");
@@ -130,7 +138,7 @@ public class mcq_system
 		}
 		else
 		{
-			i4 = i4-1;
+			i = i-1;
 			System.out.println("Wrong");
 		}
 		
@@ -149,7 +157,7 @@ public class mcq_system
 			switch(ans5)
 			{
 				case 'B': System.out.println("Right");
-				i5 = i5+4;
+				i = i+4;
 				break;
 			
 				default : System.out.println("Invalid option");
@@ -157,12 +165,14 @@ public class mcq_system
 		}
 		else
 		{
-			i5 = i5-1;
+			i = i-1;
 			System.out.println("Wrong");
 		}
 		
-		System.out.println("Your total score is:"+(i1+i2+i3+i4+i5));
+		System.out.println("==========================Candidate Result========================");
 
+		System.out.println("Your total score is:"+(i));
+		
+		System.out.println("==================================================================");
 	}
-
 }
